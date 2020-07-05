@@ -21,18 +21,14 @@ export default function List() {
 
   return (
     <div className="profile-container">
-      <h1>Marcas Cadastrados</h1>
+      <h1>MARCAS AUTOMOTIVAS</h1>
       <ul>
         {marcas.map(marca => (
         <li key={marca.codigo}>
-          <strong>Marca: </strong>
           <p>{marca.nome}</p>
 
-          <strong>Código: </strong>
-          <p>{marca.codigo}</p>
-
           <button>
-          <Link to={`${marca.nome}/${marca.codigo}`} ><FiArrowRight size={40} color="#1b6ca8" /></Link>
+          <Link to={`${marca.nome}/${marca.codigo}`} ><FiArrowRight size={40} color="#1b262c" /></Link>
           </button>
         </li>
         ))}

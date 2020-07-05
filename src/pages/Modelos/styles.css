@@ -1,3 +1,7 @@
+  body {
+    background: #e4e3e3;
+  }
+
   .profile-container {
     width: 100%;
     max-width: 1180px;
@@ -6,10 +10,17 @@
     margin-top: -10px;
   }
   
+  .profile-container strong {
+    font-size: 15px;
+    display: block;
+    margin-bottom: 20px;
+    color: #41414d
+  }
+
   .profile-container h1{
     align-self: center;
     font-size: 50px;
-    color: #252525;
+    color: #3b6978;
   }
 
   @media(max-width: 600px){
@@ -37,13 +48,13 @@
     height: 60px;
     width: 60px;
     border-radius: 4px;
-    border: 1px solid #dcdce6;
+    border: 1px solid #c7e2b2;
     background: transparent;
     margin-left: 16px;
   }
   
   .profile-container header button:hover {
-    border-color: #999;
+    border-color: #e1ffc2;
   }
   
   .profile-container h1 {
@@ -54,14 +65,14 @@
   .profile-container ul {
     display: grid;
     grid-template-columns: 1fr 1fr; /* repeat(2, ifr) */
-    grid-gap: 24px;
+    grid-gap: 20px;
     list-style: none;
   }
   
   .profile-container ul li {
-    background: #fff;
-    padding: 24px;
-    border-radius: 8px;
+    background: #84a9ac;
+    padding: 25px;
+    border-radius: 45px;
     position: relative;
   }
   
@@ -80,7 +91,7 @@
   .profile-container ul li strong {
     display: block;
     margin-bottom: 16px;
-    color: #41414d
+    color: #204051
   }
   
   .profile-container ul li p + strong {
@@ -88,7 +99,7 @@
   }
   
   .profile-container ul li p{
-    color: #737380;
+    color: #3b6978;
     line-height: 21px;
     font-size: 20px;
   }

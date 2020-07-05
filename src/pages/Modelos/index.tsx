@@ -22,18 +22,21 @@ export default function List() {
 
   return (
     <div className="profile-container">
-      <h1>Modelos Cadastrados de {marca}</h1>
+      <h1>{marca}</h1>
+
+      <strong>{modelos.length} modelos registrados - Código da marca: {id}</strong>
+      
       <ul>
         {modelos.map(modelo => (
         <li key={modelo.codigo}>
-          <strong>Nome do modelo: </strong>
+          <strong>Nome do modelo</strong>
           <p>{modelo.nome}</p>
 
-          <strong>Código do modelo: </strong>
+          <strong>Código do modelo</strong>
           <p>{modelo.codigo}</p>
 
           <button>
-          <Link to="/" ><FiArrowLeft size={40} color="#d92027" /></Link>
+          <Link to="/" ><FiArrowLeft size={40} color="#3b6978" /></Link>
           </button>
         </li>
         ))}
